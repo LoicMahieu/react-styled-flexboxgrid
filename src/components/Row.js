@@ -2,20 +2,21 @@
 import React, { PropTypes } from 'react'
 import styled from 'styled-components'
 
-import { config, DIMENSION_NAMES } from '../config'
+import createProps from '../createProps'
+import config, { DIMENSION_NAMES } from '../config'
 
 const ModificatorType = PropTypes.oneOf(DIMENSION_NAMES)
 
 const Row = styled(props =>
-  React.createElement(props.tagName || 'div', props)
+  React.createElement(props.tagName || 'div', createProps(Row.PropTypes, props))
 )`
   box-sizing: border-box;
   display: flex;
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: ${p => config(p).gutterCompensation}rem;
-  margin-left: ${p => config(p).gutterCompensation}rem;
+  margin-right: ${p => config(p).gutterWidth / 2 * -1}rem;
+  margin-left: ${p => config(p).gutterWidth / 2 * -1}rem;
 
   ${p => p.reverse && `
     flex-direction: row-reverse;

@@ -2,10 +2,11 @@
 import React, { PropTypes } from 'react'
 import styled, { css } from 'styled-components'
 
-import { config, DIMENSION_NAMES } from '../config'
+import createProps from '../createProps'
+import config, { DIMENSION_NAMES } from '../config'
 
 const Grid = styled(props =>
-  React.createElement(props.tagName || 'div', props)
+  React.createElement(props.tagName || 'div', createProps(Grid.PropTypes, props))
 )`
   margin-right: auto;
   margin-left: auto;

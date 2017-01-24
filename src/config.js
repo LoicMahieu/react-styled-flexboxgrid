@@ -1,7 +1,24 @@
 
 import { css } from 'styled-components'
 
-function makeMedia (media) {
+const THEME_CONF = 'flexboxgrid'
+const baseConf = {
+  gutterWidth: 1,
+  outerMargin: 2,
+  container: {
+    sm: 46,
+    md: 61,
+    lg: 76
+  },
+  breakpoints: {
+    xs: 0,
+    sm: 48,
+    md: 64,
+    lg: 75
+  }
+}
+
+export function makeMedia (media) {
   return (...args) => css`
     @media ${media} {
       ${css(...args)}
@@ -9,23 +26,29 @@ function makeMedia (media) {
   `
 }
 
-export function config (props) {
-  return {
-    outerMargin: 0.5,
-    gutterCompensation: 0.5,
-    halfGutterWidth: 0.5,
+export default function config (props) {
+  const themeConf = props.theme && props.theme[THEME_CONF] || {}
+
+  const conf = {
+    ...baseConf,
+    ...themeConf,
     container: {
-      sm: 46,
-      md: 61,
-      lg: 76
+      ...baseConf.container,
+      ...themeConf.container
     },
-    media: {
-      xs: makeMedia('only screen'),
-      sm: makeMedia('only screen and (min-width: 48em)'),
-      md: makeMedia('only screen and (min-width: 64em)'),
-      lg: makeMedia('only screen and (min-width: 75em)')
+    breakpoints: {
+      ...baseConf.breakpoints,
+      ...themeConf.breakpoints
     }
   }
+
+  conf.media = Object.keys(conf.breakpoints).reduce((media, breakpoint) => {
+    const breakpointWidth = conf.breakpoints[breakpoint]
+    media[breakpoint] = makeMedia('only screen' + (breakpoint === 0 ? '' : ` and (min-width: ${breakpointWidth}em)`))
+    return media
+  }, {})
+
+  return conf
 }
 
 export const DIMENSION_NAMES = ['xs', 'sm', 'md', 'lg']
