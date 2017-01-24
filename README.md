@@ -1,4 +1,6 @@
 # react-styled-flexboxgrid
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/LoicMahieu/react-styled-flexboxgrid.svg)](https://greenkeeper.io/)
 [![npm version](https://badge.fury.io/js/react-styled-flexboxgrid.svg)](https://badge.fury.io/js/react-styled-flexboxgrid)
 [![Build Status](https://travis-ci.org/LoicMahieu/react-styled-flexboxgrid.svg?branch=master)](https://travis-ci.org/LoicMahieu/react-styled-flexboxgrid)
 [![NPM Status](http://img.shields.io/npm/dm/react-styled-flexboxgrid.svg?style=flat-square)](https://www.npmjs.org/package/react-styled-flexboxgrid)
