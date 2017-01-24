@@ -2,7 +2,7 @@
 import { css } from 'styled-components'
 
 const THEME_CONF = 'flexboxgrid'
-const baseConf = {
+export const BASE_CONF = {
   gutterWidth: 1,
   outerMargin: 2,
   container: {
@@ -18,26 +18,20 @@ const baseConf = {
   }
 }
 
-export function makeMedia (media) {
-  return (...args) => css`
-    @media ${media} {
-      ${css(...args)}
-    }
-  `
-}
-
-export default function config (props) {
+const configCache = []
+const makeCacheId = props => JSON.stringify(props.theme && props.theme[THEME_CONF] || {})
+const resolveConfig = props => {
   const themeConf = props.theme && props.theme[THEME_CONF] || {}
 
   const conf = {
-    ...baseConf,
+    ...BASE_CONF,
     ...themeConf,
     container: {
-      ...baseConf.container,
+      ...BASE_CONF.container,
       ...themeConf.container
     },
     breakpoints: {
-      ...baseConf.breakpoints,
+      ...BASE_CONF.breakpoints,
       ...themeConf.breakpoints
     }
   }
@@ -52,3 +46,25 @@ export default function config (props) {
 }
 
 export const DIMENSION_NAMES = ['xs', 'sm', 'md', 'lg']
+
+export default function config (props) {
+  const cacheId = makeCacheId(props)
+  if (configCache[0] === cacheId) {
+    return configCache[1]
+  }
+
+  const conf = resolveConfig(props)
+
+  configCache[0] = cacheId
+  configCache[1] = conf
+
+  return conf
+}
+
+function makeMedia (media) {
+  return (...args) => css`
+    @media ${media} {
+      ${css(...args)}
+    }
+  `
+}
