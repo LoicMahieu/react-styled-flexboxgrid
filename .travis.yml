@@ -3,3 +3,5 @@ node_js:
   - "6"
 script:
   - npm test
+before_script:
+  - npm install styled-components react
