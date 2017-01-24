@@ -16,8 +16,8 @@
     "test": "npm run lint && npm run mocha && npm run karma",
     "karma": "cross-env NODE_ENV=test karma start",
     "karma:watch": "cross-env NODE_ENV=test karma start --no-single-run",
-    "mocha": "cross-env NODE_ENV=test mocha --require babel-core/register **/*_test.js",
-    "mocha:watch": "cross-env NODE_ENV=test mocha --watch --require babel-core/register **/*_test.js"
+    "mocha": "cross-env NODE_ENV=test mocha --require babel-core/register **/*.test.js",
+    "mocha:watch": "cross-env NODE_ENV=test mocha --watch --require babel-core/register **/*.test.js"
   },
   "author": "",
   "license": "ISC",

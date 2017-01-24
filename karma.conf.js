@@ -13,7 +13,7 @@ module.exports = function (config) {
     basePath: './',
 
     files: [
-      './src/**/*_test.js'
+      './src/**/*.test.js'
     ],
 
     autoWatch: true,
@@ -21,7 +21,7 @@ module.exports = function (config) {
     frameworks: ['mocha'],
 
     preprocessors: {
-      './src/**/*_test.js': ['webpack', 'sourcemap']
+      './src/**/*.test.js': ['webpack', 'sourcemap']
     },
 
     webpack: webpackConfig,
