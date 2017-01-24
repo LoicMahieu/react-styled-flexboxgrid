@@ -1,17 +1,16 @@
 
 import webpack from 'webpack'
-import path from 'path'
 
 module.exports = {
   context: __dirname,
   devtool: 'inline-source-map',
   entry: [
-    'webpack-hot-middleware/client',
-    './demo/index.js'
+    'webpack/hot/dev-server',
+    'webpack-dev-server/client?http://localhost:8080/',
+    './index.js'
   ],
   output: {
-    path: path.join(__dirname, 'demo/build'),
-    publicPath: '/demo/build/',
+    publicPath: '/build/',
     filename: 'bundle.js'
   },
   module: {
@@ -24,7 +23,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
-  ]
+  ],
+  devServer: {
+    contentBase: __dirname
+  }
 }

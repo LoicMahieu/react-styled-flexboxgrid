@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './app'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+import './global-styles'
+import Homepage from './components/Homepage'
+
+ReactDOM.render(<Homepage />, document.getElementById('root'))
