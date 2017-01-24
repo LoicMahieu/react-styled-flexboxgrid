@@ -1,0 +1,6 @@
+.github
+.travis.yml
+rollup.config.js
+.babelrc
+demo/
+bundle-stats.html
