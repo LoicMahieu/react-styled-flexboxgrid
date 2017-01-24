@@ -4,7 +4,9 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "BABEL_ENV=development webpack-dev-server --config demo/webpack.config.babel.js --hot"
+    "start": "BABEL_ENV=development webpack-dev-server --config demo/webpack.config.babel.js --hot",
+    "lint": "standard",
+    "test": "npm run lint"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +19,7 @@
     "babel-preset-react": "^6.22.0",
     "babel-preset-react-hmre": "^1.1.1",
     "react-dom": "^15.4.2",
+    "standard": "^8.6.0",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2",
     "webpack-hot-middleware": "^2.15.0"
