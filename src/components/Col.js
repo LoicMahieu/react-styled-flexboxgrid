@@ -31,8 +31,8 @@ const Col = styled(props =>
     .map(k =>
       Number.isInteger(p[k])
       ? config(p).media[k]`
-        flex-basis: ${100 / 12 * p[k]}%;
-        max-width: ${100 / 12 * p[k]}%;
+        flex-basis: ${100 / config(p).gridSize * p[k]}%;
+        max-width: ${100 / config(p).gridSize * p[k]}%;
       `
       : config(p).media[k]`
         flex-grow: 1;
@@ -46,7 +46,7 @@ const Col = styled(props =>
     .filter(k => ~offsetProps.indexOf(k))
     .map(k =>
       config(p).media[k.replace(/Offset$/, '')]`
-        margin-left: ${100 / 12 * p[k]}%;
+        margin-left: ${100 / config(p).gridSize * p[k]}%;
       `
     )
   }

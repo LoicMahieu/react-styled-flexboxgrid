@@ -3,6 +3,7 @@ import { css } from 'styled-components'
 
 const THEME_CONF = 'flexboxgrid'
 export const BASE_CONF = {
+  gridSize: 12,
   gutterWidth: 1,
   outerMargin: 2,
   container: {
