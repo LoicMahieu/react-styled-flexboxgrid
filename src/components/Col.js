@@ -57,7 +57,6 @@ Col.displayName = 'Col'
 Col.PropTypes = {
   ...DimensionPropTypes,
   reverse: PropTypes.bool,
-  className: PropTypes.string,
   tagName: PropTypes.string,
   children: PropTypes.node
 }

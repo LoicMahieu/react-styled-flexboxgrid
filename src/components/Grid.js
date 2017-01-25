@@ -30,7 +30,6 @@ Grid.displayName = 'Grid'
 Grid.PropTypes = {
   fluid: PropTypes.bool,
   tagName: PropTypes.string,
-  className: PropTypes.string,
   children: PropTypes.node
 }
 

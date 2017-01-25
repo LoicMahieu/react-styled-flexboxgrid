@@ -80,7 +80,6 @@ Row.PropTypes = {
   between: ModificatorType,
   first: ModificatorType,
   last: ModificatorType,
-  className: PropTypes.string,
   tagName: PropTypes.string,
   children: PropTypes.node
 }
