@@ -11,6 +11,8 @@ Set of React components that implement [`flexboxgrid.css`](https://github.com/kr
 
 Highly inspired by the excellent [`react-flexbox-grid`](https://github.com/roylee0704/react-flexbox-grid) which the API is nearly the same than this module.
 
+[**Demo**](https://loicmahieu.github.io/react-styled-flexboxgrid/demo/index.html)
+
 ## Usage
 
 ### Basic
