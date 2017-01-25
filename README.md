@@ -61,8 +61,14 @@ The `<Grid>` component is optional and can help to wrap children in a fixed/flui
 
 - `reverse` _(Boolean)_: Use `flex-direction: column-reverse`. Default: false
 - `tagName` _(Boolean)_: Tag for HTML element. Default: 'div'
-- `xs` _(Boolean|Integer)_: When true boolean, enable auto sizing column. When interger value, it specify the column size on the grid. (1 to 12)
-- `xsOffset` _(Integer)_: Offset the column.
+- `xs`
+- `sm`
+- `md`
+- `lg` _(Boolean|Integer)_: When true boolean, enable auto sizing column. When interger value, it specify the column size on the grid. (1 to 12)
+- `xsOffset`
+- `smOffset`
+- `mdOffset`
+- `lgOffset` _(Integer)_: Offset the column.
 
 
 ### Configuration
