@@ -28,14 +28,49 @@ const App = props =>
   </Grid>
 ```
 
+### Grid
+
+The `<Grid>` component is optional and can help to wrap children in a fixed/fluid container. Use the configuration `container` for fixed width value.
+
+##### Props
+
+- `fluid` _(Boolean)_: Create a responsive fixed width container or a full width container, spanning the entire width of your viewport. Default: false
+
+
+### Row
+
+##### Props
+
+- `reverse` _(Boolean)_: Use `flex-direction: row-reverse`. Default: false
+- `tagName` _(String)_: Tag for HTML element. Default: 'div'
+- `start`
+- `center`
+- `end`
+- `top`
+- `middle`
+- `bottom`
+- `around`
+- `between`
+- `first`
+- `last` _(String(xs|sm|md|lg)_: Align elements to the start or end of row as well as the top, bottom, or center of a column.
+
+
+### Col
+
+##### Props
+
+- `reverse` _(Boolean)_: Use `flex-direction: column-reverse`. Default: false
+- `tagName` _(Boolean)_: Tag for HTML element. Default: 'div'
+- `xs` _(Boolean|Integer)_: When true boolean, enable auto sizing column. When interger value, it specify the column size on the grid. (1 to 12)
+- `xsOffset` _(Integer)_: Offset the column.
+
+
 ### Configuration
 
 The grid use same defaults than [`flexboxgrid.css`](https://github.com/kristoferjoseph/flexboxgrid).
 
 You can customize values using [`<ThemeProvider>`](https://github.com/styled-components/styled-components#theming) component from styled-components.
 `react-styled-flexboxgrid` will looks at the `flexboxgrid` property in the theme.
-
-*All values are assumed to be a number in **rem***
 
 ```JSX
 import React from 'react'
