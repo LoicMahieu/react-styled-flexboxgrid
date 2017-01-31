@@ -73,7 +73,7 @@
     "rollup-plugin-uglify": "^1.0.1",
     "rollup-plugin-visualizer": "^0.2.0",
     "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2",
+    "webpack-dev-server": "^2.2.1",
     "webpack-hot-middleware": "^2.15.0"
   },
   "peerDependencies": {
