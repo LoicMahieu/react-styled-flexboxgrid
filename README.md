@@ -15,6 +15,18 @@ Highly inspired by the excellent [`react-flexbox-grid`](https://github.com/royle
 
 ## Usage
 
+### Installation
+
+```
+npm i -S react-styled-flexboxgrid
+```
+
+`react-styled-flexboxgrid` depends on 2 **peer** dependencies:
+- `react@^0.14.0 || ^15.0.0-0`
+- `styled-components@^1.3.1`
+
+You should install them in your project.
+
 ### Basic
 
 ```JSX
@@ -113,12 +125,6 @@ const App = props =>
       </Row>
     </Grid>
   </ThemeProvider>
-```
-
-### Installation
-
-```
-npm i -S react-styled-flexboxgrid
 ```
 
 ## License
