@@ -28,18 +28,28 @@ const Col = styled(props =>
 
   ${p => Object.keys(p)
     .filter(k => ~DIMENSION_NAMES.indexOf(k))
-    .map(k =>
+    .map(k => config(p).media[k]`${
       Number.isInteger(p[k])
-      ? config(p).media[k]`
+
+      // Integer value
+      ? `
         flex-basis: ${100 / config(p).gridSize * p[k]}%;
         max-width: ${100 / config(p).gridSize * p[k]}%;
+        display: block;
       `
-      : config(p).media[k]`
-        flex-grow: 1;
-        flex-basis: 0;
-        max-width: 100%;
-      `
-    )
+      // Boolean
+      : (p[k]
+        // Auto-width
+        ? `
+          flex-grow: 1;
+          flex-basis: 0;
+          max-width: 100%;
+          display: block;
+        `
+        // Hide element
+        : 'display: none;'
+      )
+    }`)
   }
 
   ${p => Object.keys(p)

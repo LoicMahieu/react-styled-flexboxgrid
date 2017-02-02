@@ -5,7 +5,6 @@ import { Row, Col } from '../../src/index'
 
 const Headline = styled.h1`
   font-size: 2.5rem;
-  white-space: nowrap;
 
   @media only screen and (min-width: 48rem) {
     font-size: 4rem;
@@ -51,7 +50,7 @@ const Button = styled.a`
 const Hero = styled(props =>
   <header className={props.className}>
     <Row center='xs'>
-      <Headline>React-Styled-Flexboxgrid</Headline>
+      <Headline>React Styled Flexboxgrid</Headline>
     </Row>
     <Description>
       <p><code>Grid system based on <a href='https://github.com/styled-components/styled-components'>styled-components</a> and flexbox</code></p>

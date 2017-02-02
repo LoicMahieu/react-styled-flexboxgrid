@@ -26,6 +26,7 @@ import alignMiddleMD from 'html-loader!markdown-loader!../md/align-middle.md'
 import alignBottomMD from 'html-loader!markdown-loader!../md/align-bottom.md'
 import distAroundMD from 'html-loader!markdown-loader!../md/dist-around.md'
 import distBetweenMD from 'html-loader!markdown-loader!../md/dist-between.md'
+import hideMD from 'html-loader!markdown-loader!../md/hide.md'
 
 import Markdown from './Markdown'
 
@@ -168,6 +169,15 @@ const Demo = props => (
       </Row>
       <Row>
         <Markdown html={distBetweenMD} />
+      </Row>
+    </Section>
+    <Section title='Hide' description='You can simply hide some elements for a given breakpoint by passing `false` to the breakpoint properties.'>
+      <Row>
+        <Box xs={12} md={6} />
+        <Box xs={false} md={6} />
+      </Row>
+      <Row>
+        <Markdown html={hideMD} />
       </Row>
     </Section>
   </div>
