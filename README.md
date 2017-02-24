@@ -130,6 +130,11 @@ const App = props =>
   </ThemeProvider>
 ```
 
+## Related projects
+
+- [styled-components](https://github.com/styled-components/styled-components)
+- [hedron](https://github.com/JSBros/hedron)
+
 ## License
 
 MIT
