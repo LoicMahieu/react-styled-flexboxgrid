@@ -70,7 +70,7 @@
     "react-dom": "^15.4.2",
     "rollup": "^0.41.4",
     "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-commonjs": "^7.0.0",
+    "rollup-plugin-commonjs": "^8.0.0",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-uglify": "^1.0.1",
     "rollup-plugin-visualizer": "^0.2.0",
