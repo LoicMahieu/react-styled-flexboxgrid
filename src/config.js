@@ -13,9 +13,9 @@ export const BASE_CONF = {
   },
   breakpoints: {
     xs: 0,
-    sm: 48,
-    md: 64,
-    lg: 75
+    sm: 768,
+    md: 1024,
+    lg: 1200
   }
 }
 
@@ -39,7 +39,7 @@ const resolveConfig = props => {
 
   conf.media = Object.keys(conf.breakpoints).reduce((media, breakpoint) => {
     const breakpointWidth = conf.breakpoints[breakpoint]
-    media[breakpoint] = makeMedia('only screen' + (breakpoint === 0 ? '' : ` and (min-width: ${breakpointWidth}em)`))
+    media[breakpoint] = makeMedia('only screen' + (breakpointWidth === 0 ? '' : ` and (min-width: ${breakpointWidth + 1}px)`))
     return media
   }, {})
 
