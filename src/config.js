@@ -20,9 +20,9 @@ export const BASE_CONF = {
 }
 
 const configCache = []
-const makeCacheId = props => JSON.stringify(props.theme && props.theme[THEME_CONF] || {})
+const makeCacheId = props => JSON.stringify((props.theme && props.theme[THEME_CONF]) || {})
 const resolveConfig = props => {
-  const themeConf = props.theme && props.theme[THEME_CONF] || {}
+  const themeConf = (props.theme && props.theme[THEME_CONF]) || {}
 
   const conf = {
     ...BASE_CONF,

@@ -1,4 +1,6 @@
 
+import fs from 'fs'
+import path from 'path'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import babel from 'rollup-plugin-babel'
@@ -6,7 +8,6 @@ import uglify from 'rollup-plugin-uglify'
 import visualizer from 'rollup-plugin-visualizer'
 
 const prod = process.env.NODE_ENV === 'production'
-console.log('prod', prod, process.env.NODE_ENV)
 const mode = prod ? 'production' : 'development'
 
 console.log(`Creating ${mode} bundle...`)
@@ -18,19 +19,25 @@ const targets = prod ? [
   { dest: 'dist/styled-flexboxgrid.es.js', format: 'es' }
 ]
 
+const babelrc = JSON.parse(fs.readFileSync(path.join(__dirname, './.babelrc')))
+
 const plugins = [
   nodeResolve(),
   commonjs(),
-  babel({
+  babel(Object.assign({}, babelrc, {
     babelrc: false,
-    presets: [
-      ['es2015', { modules: false }],
-      'react'
-    ],
-    plugins: [
-      'transform-object-rest-spread'
-    ]
-  })
+    presets: babelrc.presets.map(p => (
+      p !== 'es2015'
+      ? p
+      : [
+        'es2015',
+        {
+          'modules': false
+        }
+      ]
+    )),
+    plugins: babelrc.plugins.concat(['external-helpers'])
+  }))
 ]
 
 if (prod) plugins.push(uglify(), visualizer({ filename: './bundle-stats.html' }))
