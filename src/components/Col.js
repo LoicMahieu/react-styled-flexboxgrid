@@ -15,9 +15,20 @@ const DimensionPropTypes = DIMENSION_NAMES.reduce((propTypes, dimension) => {
   return propTypes
 }, {})
 
-const Col = styled(props =>
+const Col = props => (
   React.createElement(props.tagName || 'div', createProps(Col.PropTypes, props))
-)`
+)
+
+Col.propTypes = {
+  ...DimensionPropTypes,
+  reverse: PropTypes.bool,
+  tagName: PropTypes.string,
+  children: PropTypes.node
+}
+
+Col.displayName = 'Col'
+
+export default styled(Col)`
   box-sizing: border-box;
   flex: 0 0 auto;
   padding-right: ${p => config(p).gutterWidth / 2}rem;
@@ -62,14 +73,3 @@ const Col = styled(props =>
     )
   }
 `
-
-Col.displayName = 'Col'
-
-Col.PropTypes = {
-  ...DimensionPropTypes,
-  reverse: PropTypes.bool,
-  tagName: PropTypes.string,
-  children: PropTypes.node
-}
-
-export default Col
