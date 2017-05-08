@@ -29,7 +29,6 @@ const Col = styled(props =>
 
   ${p => Object.keys(p)
     .filter(k => ~DIMENSION_NAMES.indexOf(k))
-    .sort((a, b) => DIMENSION_NAMES.indexOf(a) - DIMENSION_NAMES.indexOf(b))
     .map(k => config(p).media[k]`${
       Number.isInteger(p[k])
 
