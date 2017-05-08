@@ -8,9 +8,29 @@ import config, { DIMENSION_NAMES } from '../config'
 
 const ModificatorType = PropTypes.oneOf(DIMENSION_NAMES)
 
-const Row = styled(props =>
+const Row = props => (
   React.createElement(props.tagName || 'div', createProps(Row.PropTypes, props))
-)`
+)
+
+Row.displayName = 'Row'
+
+Row.propTypes = {
+  reverse: PropTypes.bool,
+  start: ModificatorType,
+  center: ModificatorType,
+  end: ModificatorType,
+  top: ModificatorType,
+  middle: ModificatorType,
+  bottom: ModificatorType,
+  around: ModificatorType,
+  between: ModificatorType,
+  first: ModificatorType,
+  last: ModificatorType,
+  tagName: PropTypes.string,
+  children: PropTypes.node
+}
+
+export default styled(Row)`
   box-sizing: border-box;
   display: flex;
   flex: 0 1 auto;
@@ -66,23 +86,3 @@ const Row = styled(props =>
     order: 1;
   `}
 `
-
-Row.displayName = 'Row'
-
-Row.PropTypes = {
-  reverse: PropTypes.bool,
-  start: ModificatorType,
-  center: ModificatorType,
-  end: ModificatorType,
-  top: ModificatorType,
-  middle: ModificatorType,
-  bottom: ModificatorType,
-  around: ModificatorType,
-  between: ModificatorType,
-  first: ModificatorType,
-  last: ModificatorType,
-  tagName: PropTypes.string,
-  children: PropTypes.node
-}
-
-export default Row

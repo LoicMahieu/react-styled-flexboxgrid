@@ -6,9 +6,19 @@ import styled, { css } from 'styled-components'
 import createProps from '../createProps'
 import config, { DIMENSION_NAMES } from '../config'
 
-const Grid = styled(props =>
+const Grid = props => (
   React.createElement(props.tagName || 'div', createProps(Grid.PropTypes, props))
-)`
+)
+
+Grid.displayName = 'Grid'
+
+Grid.propTypes = {
+  fluid: PropTypes.bool,
+  tagName: PropTypes.string,
+  children: PropTypes.node
+}
+
+export default styled(Grid)`
   margin-right: auto;
   margin-left: auto;
 
@@ -25,13 +35,3 @@ const Grid = styled(props =>
     )}
   `}
 `
-
-Grid.displayName = 'Grid'
-
-Grid.PropTypes = {
-  fluid: PropTypes.bool,
-  tagName: PropTypes.string,
-  children: PropTypes.node
-}
-
-export default Grid
