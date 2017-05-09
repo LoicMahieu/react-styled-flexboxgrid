@@ -16,7 +16,7 @@ const DimensionPropTypes = DIMENSION_NAMES.reduce((propTypes, dimension) => {
 }, {})
 
 const Col = props => (
-  React.createElement(props.tagName || 'div', createProps(Col.PropTypes, props))
+  React.createElement(props.tagName || 'div', createProps(Col.propTypes, props))
 )
 
 Col.propTypes = {
