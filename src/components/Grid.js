@@ -7,7 +7,7 @@ import createProps from '../createProps'
 import config, { DIMENSION_NAMES } from '../config'
 
 const Grid = props => (
-  React.createElement(props.tagName || 'div', createProps(Grid.PropTypes, props))
+  React.createElement(props.tagName || 'div', createProps(Grid.propTypes, props))
 )
 
 Grid.displayName = 'Grid'

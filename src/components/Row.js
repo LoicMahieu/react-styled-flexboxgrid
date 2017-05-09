@@ -9,7 +9,7 @@ import config, { DIMENSION_NAMES } from '../config'
 const ModificatorType = PropTypes.oneOf(DIMENSION_NAMES)
 
 const Row = props => (
-  React.createElement(props.tagName || 'div', createProps(Row.PropTypes, props))
+  React.createElement(props.tagName || 'div', createProps(Row.propTypes, props))
 )
 
 Row.displayName = 'Row'
