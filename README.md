@@ -24,7 +24,7 @@ npm i -S react-styled-flexboxgrid
 `react-styled-flexboxgrid` depends on 2 **peer** dependencies:
 - `react@^0.14.0 || ^15.0.0-0`
 - `prop-types@^15.0.0-0`
-- `styled-components@^1.3.1`
+- `styled-components@2`
 
 You should install them in your project.
 
@@ -57,7 +57,6 @@ The `<Grid>` component is optional and can help to wrap children in a fixed/flui
 ##### Props
 
 - `reverse` _(Boolean)_: Use `flex-direction: row-reverse`. Default: false
-- `tagName` _(String)_: Tag for HTML element. Default: 'div'
 - `start`
 - `center`
 - `end`
@@ -75,7 +74,6 @@ The `<Grid>` component is optional and can help to wrap children in a fixed/flui
 ##### Props
 
 - `reverse` _(Boolean)_: Use `flex-direction: column-reverse`. Default: false
-- `tagName` _(Boolean)_: Tag for HTML element. Default: 'div'
 - `xs`
 - `sm`
 - `md`
