@@ -86,6 +86,6 @@
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0",
     "prop-types": "^15.0.0-0",
-    "styled-components": "^1 || ^2.0"
+    "styled-components": "^2.0.0"
   }
 }
