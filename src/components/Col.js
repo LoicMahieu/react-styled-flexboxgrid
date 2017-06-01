@@ -1,9 +1,7 @@
 
-import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import createProps from '../createProps'
 import config, { DIMENSION_NAMES } from '../config'
 
 const ModificatorType = PropTypes.oneOfType([ PropTypes.number, PropTypes.bool ])
@@ -15,20 +13,7 @@ const DimensionPropTypes = DIMENSION_NAMES.reduce((propTypes, dimension) => {
   return propTypes
 }, {})
 
-const Col = props => (
-  React.createElement(props.tagName || 'div', createProps(Col.propTypes, props))
-)
-
-Col.propTypes = {
-  ...DimensionPropTypes,
-  reverse: PropTypes.bool,
-  tagName: PropTypes.string,
-  children: PropTypes.node
-}
-
-Col.displayName = 'Col'
-
-export default styled(Col)`
+const Col = styled.div`
   box-sizing: border-box;
   flex: 0 0 auto;
   padding-right: ${p => config(p).gutterWidth / 2}rem;
@@ -73,3 +58,14 @@ export default styled(Col)`
     )
   }
 `
+
+Col.displayName = 'Col'
+
+Col.propTypes = {
+  ...DimensionPropTypes,
+  reverse: PropTypes.bool,
+  tagName: PropTypes.string,
+  children: PropTypes.node
+}
+
+export default Col

@@ -1,36 +1,12 @@
 
-import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import createProps from '../createProps'
 import config, { DIMENSION_NAMES } from '../config'
 
 const ModificatorType = PropTypes.oneOf(DIMENSION_NAMES)
 
-const Row = props => (
-  React.createElement(props.tagName || 'div', createProps(Row.propTypes, props))
-)
-
-Row.displayName = 'Row'
-
-Row.propTypes = {
-  reverse: PropTypes.bool,
-  start: ModificatorType,
-  center: ModificatorType,
-  end: ModificatorType,
-  top: ModificatorType,
-  middle: ModificatorType,
-  bottom: ModificatorType,
-  around: ModificatorType,
-  between: ModificatorType,
-  first: ModificatorType,
-  last: ModificatorType,
-  tagName: PropTypes.string,
-  children: PropTypes.node
-}
-
-export default styled(Row)`
+const Row = styled.div`
   box-sizing: border-box;
   display: flex;
   flex: 0 1 auto;
@@ -86,3 +62,23 @@ export default styled(Row)`
     order: 1;
   `}
 `
+
+Row.displayName = 'Row'
+
+Row.propTypes = {
+  reverse: PropTypes.bool,
+  start: ModificatorType,
+  center: ModificatorType,
+  end: ModificatorType,
+  top: ModificatorType,
+  middle: ModificatorType,
+  bottom: ModificatorType,
+  around: ModificatorType,
+  between: ModificatorType,
+  first: ModificatorType,
+  last: ModificatorType,
+  tagName: PropTypes.string,
+  children: PropTypes.node
+}
+
+export default Row

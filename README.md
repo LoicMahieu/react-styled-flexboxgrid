@@ -57,7 +57,6 @@ The `<Grid>` component is optional and can help to wrap children in a fixed/flui
 ##### Props
 
 - `reverse` _(Boolean)_: Use `flex-direction: row-reverse`. Default: false
-- `tagName` _(String)_: Tag for HTML element. Default: 'div'
 - `start`
 - `center`
 - `end`
@@ -75,7 +74,6 @@ The `<Grid>` component is optional and can help to wrap children in a fixed/flui
 ##### Props
 
 - `reverse` _(Boolean)_: Use `flex-direction: column-reverse`. Default: false
-- `tagName` _(Boolean)_: Tag for HTML element. Default: 'div'
 - `xs`
 - `sm`
 - `md`
