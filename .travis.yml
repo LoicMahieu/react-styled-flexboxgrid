@@ -4,4 +4,4 @@ node_js:
 script:
   - npm test
 before_script:
-  - npm install styled-components@1 react@15
+  - npm install styled-components react@15
