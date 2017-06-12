@@ -1,6 +1,7 @@
 
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import isInteger from 'lodash.isinteger'
 
 import config, { DIMENSION_NAMES } from '../config'
 
@@ -27,7 +28,7 @@ const Col = styled.div`
     .filter(k => ~DIMENSION_NAMES.indexOf(k))
     .sort(k => DIMENSION_NAMES.indexOf(k))
     .map(k => config(p).media[k]`${
-      Number.isInteger(p[k])
+      isInteger(p[k])
 
       // Integer value
       ? `
