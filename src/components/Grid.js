@@ -15,10 +15,10 @@ const Grid = styled.div`
 
   ${p => !p.fluid && css`
     ${DIMENSION_NAMES.map(t =>
-      config(p).container[t] && config(p).media[t]`
+    config(p).container[t] && config(p).media[t]`
         width: ${p => config(p).container[t]}rem;
       `
-    )}
+  )}
   `}
 `
 
