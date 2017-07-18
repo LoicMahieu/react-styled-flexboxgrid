@@ -31,25 +31,25 @@ const Col = styled.div`
       isInteger(p[k])
 
       // Integer value
-      ? `
+        ? `
         flex-basis: ${100 / config(p).gridSize * p[k]}%;
         max-width: ${100 / config(p).gridSize * p[k]}%;
         display: block;
       `
-      // Boolean
-      : (p[k]
+        // Boolean
+        : (p[k]
         // Auto-width
-        ? `
+          ? `
           flex-grow: 1;
           flex-basis: 0;
           max-width: 100%;
           display: block;
         `
-        // Hide element
-        : 'display: none;'
-      )
+          // Hide element
+          : 'display: none;'
+        )
     }`)
-  }
+}
 
   ${p => Object.keys(p)
     .filter(k => ~offsetProps.indexOf(k))
@@ -58,7 +58,7 @@ const Col = styled.div`
         margin-left: ${100 / config(p).gridSize * p[k]}%;
       `
     )
-  }
+}
 `
 
 Col.displayName = 'Col'
