@@ -26,7 +26,6 @@ Grid.displayName = 'Grid'
 
 Grid.propTypes = {
   fluid: PropTypes.bool,
-  tagName: PropTypes.string,
   children: PropTypes.node
 }
 

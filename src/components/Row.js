@@ -77,7 +77,6 @@ Row.propTypes = {
   between: ModificatorType,
   first: ModificatorType,
   last: ModificatorType,
-  tagName: PropTypes.string,
   children: PropTypes.node
 }
 

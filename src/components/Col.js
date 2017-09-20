@@ -66,7 +66,6 @@ Col.displayName = 'Col'
 Col.propTypes = {
   ...DimensionPropTypes,
   reverse: PropTypes.bool,
-  tagName: PropTypes.string,
   children: PropTypes.node
 }
 
