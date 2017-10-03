@@ -70,7 +70,7 @@
     "lodash.compact": "^3.0.1",
     "lodash.debounce": "^4.0.8",
     "markdown-loader": "^2.0.0",
-    "mocha": "^3.3.0",
+    "mocha": "^4.0.0",
     "prop-types": "^15.5.8",
     "react": "~16.0.0",
     "react-dom": "^16.0.0",
