@@ -6,6 +6,7 @@ export const BASE_CONF = {
   gridSize: 12,
   gutterWidth: 1,
   outerMargin: 2,
+  mediaQuery: 'only screen',
   container: {
     sm: 46,
     md: 61,
@@ -39,7 +40,14 @@ const resolveConfig = props => {
 
   conf.media = Object.keys(conf.breakpoints).reduce((media, breakpoint) => {
     const breakpointWidth = conf.breakpoints[breakpoint]
-    media[breakpoint] = makeMedia('only screen' + (breakpoint === 0 ? '' : ` and (min-width: ${breakpointWidth}em)`))
+    media[breakpoint] = makeMedia(
+      [
+        conf.mediaQuery,
+        breakpoint !== 0 && `(min-width: ${breakpointWidth}em)`
+      ]
+        .filter(Boolean)
+        .join(' and ')
+    )
     return media
   }, {})
 
