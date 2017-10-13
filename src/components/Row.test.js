@@ -7,7 +7,7 @@ import React from 'react'
 import Row from './Row'
 
 describe('Row', () => {
-  it('should works', () => {
+  it('should work', () => {
     expect(<Row />).to.be.ok
   })
 })
