@@ -7,7 +7,7 @@ import React from 'react'
 import Col from './Col'
 
 describe('Col', () => {
-  it('should works', () => {
+  it('should work', () => {
     expect(<Col />).to.be.ok
   })
 })

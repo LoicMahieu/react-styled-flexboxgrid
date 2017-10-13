@@ -7,7 +7,7 @@ import React from 'react'
 import Grid from './Grid'
 
 describe('Grid', () => {
-  it('should works', () => {
+  it('should work', () => {
     expect(<Grid />).to.be.ok
   })
 })

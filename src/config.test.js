@@ -16,7 +16,7 @@ describe('config', () => {
     })
   })
   describe('config()', () => {
-    it('should be an function', () => {
+    it('should be a function', () => {
       expect(config).to.be.an('function')
     })
   })
