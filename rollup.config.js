@@ -12,11 +12,11 @@ const mode = prod ? 'production' : 'development'
 
 console.log(`Creating ${mode} bundle...`)
 
-const targets = prod ? [
-  { dest: 'dist/styled-flexboxgrid.min.js', format: 'umd' }
+const output = prod ? [
+  { file: 'dist/styled-flexboxgrid.min.js', format: 'umd' }
 ] : [
-  { dest: 'dist/styled-flexboxgrid.js', format: 'umd' },
-  { dest: 'dist/styled-flexboxgrid.es.js', format: 'es' }
+  { file: 'dist/styled-flexboxgrid.js', format: 'umd' },
+  { file: 'dist/styled-flexboxgrid.es.js', format: 'es' }
 ]
 
 const babelrc = JSON.parse(fs.readFileSync(path.join(__dirname, './.babelrc')))
@@ -43,11 +43,11 @@ const plugins = [
 if (prod) plugins.push(uglify(), visualizer({ filename: './bundle-stats.html' }))
 
 export default {
-  entry: 'src/index.js',
-  moduleName: 'styled',
+  input: 'src/index.js',
+  name: 'styled',
   external: ['react', 'styled-components'],
   exports: 'named',
-  targets,
+  output,
   plugins,
   globals: { react: 'React', 'styled-components': 'styled' }
 }
