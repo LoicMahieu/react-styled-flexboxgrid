@@ -22,7 +22,7 @@ npm i -S react-styled-flexboxgrid
 ```
 
 `react-styled-flexboxgrid` depends on 2 **peer** dependencies:
-- `react@^0.14.0 || ^15.0.0-0`
+- `react@^0.14.0 || ^15.0.0-0 || ^16.0.0-0`
 - `prop-types@^15.0.0-0`
 - `styled-components@2`
 
