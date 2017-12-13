@@ -21,17 +21,14 @@ const Row = styled.div`
 
   ${p => p.start && config(p).media[p.start]`
     justify-content: flex-start;
-    text-align: start;
   `}
 
   ${p => p.center && config(p).media[p.center]`
     justify-content: center;
-    text-align: center;
   `}
 
   ${p => p.end && config(p).media[p.end]`
     justify-content: flex-end;
-    text-align: end;
   `}
 
   ${p => p.top && config(p).media[p.top]`
