@@ -81,7 +81,7 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-uglify": "^2.0.1",
     "rollup-plugin-visualizer": "^0.3.1",
-    "styled-components": "~2.2.1",
+    "styled-components": "~2.3.0",
     "webpack": "^3.8.0",
     "webpack-dev-server": "^2.9.2",
     "webpack-hot-middleware": "^2.20.0"
