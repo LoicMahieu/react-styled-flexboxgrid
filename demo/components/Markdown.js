@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Markdown = props => {
@@ -12,8 +13,8 @@ const Markdown = props => {
 }
 
 Markdown.propTypes = {
-  html: React.PropTypes.string,
-  className: React.PropTypes.string
+  html: PropTypes.string,
+  className: PropTypes.string
 }
 
 export default styled(Markdown)`
