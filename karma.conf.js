@@ -13,6 +13,7 @@ module.exports = function (config) {
     basePath: './',
 
     files: [
+      { pattern: 'node_modules/babel-polyfill/browser.js', instrument: false },
       './src/**/*.test.js'
     ],
 
