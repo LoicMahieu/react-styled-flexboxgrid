@@ -74,7 +74,7 @@
     "markdown-loader": "^2.0.1",
     "mocha": "^4.0.1",
     "prop-types": "^15.6.0",
-    "react": "~16.0.0",
+    "react": "~16.1.0",
     "react-dom": "^16.0.0",
     "rollup": "^0.55.5",
     "rollup-plugin-babel": "^3.0.2",
