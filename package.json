@@ -78,7 +78,7 @@
     "prop-types": "^15.6.0",
     "react": "~16.2.0",
     "react-dom": "^16.0.0",
-    "rollup": "^0.55.5",
+    "rollup": "^0.56.0",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-uglify": "^3.0.0",
     "rollup-plugin-visualizer": "^0.3.1",
