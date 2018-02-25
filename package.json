@@ -84,7 +84,7 @@
     "rollup-plugin-visualizer": "^0.4.0",
     "styled-components": "~3.1.6",
     "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.1",
+    "webpack-dev-server": "^3.0.0",
     "webpack-hot-middleware": "^2.21.0"
   },
   "peerDependencies": {
