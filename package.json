@@ -81,7 +81,7 @@
     "rollup": "^0.55.5",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-uglify": "^3.0.0",
-    "rollup-plugin-visualizer": "^0.3.1",
+    "rollup-plugin-visualizer": "^0.4.0",
     "styled-components": "~3.1.6",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1",
