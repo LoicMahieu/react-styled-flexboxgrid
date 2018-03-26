@@ -103,7 +103,7 @@ import {Grid, Col, Row} from 'react-styled-flexboxgrid'
 const theme = {
   flexboxgrid: {
     // Defaults
-    gridSize: 12, // rem
+    gridSize: 12, // columns
     gutterWidth: 1, // rem
     outerMargin: 2, // rem
     mediaQuery: 'only screen',
