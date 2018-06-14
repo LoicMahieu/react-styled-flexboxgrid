@@ -1,6 +1,6 @@
 
 import babel from 'rollup-plugin-babel'
-import uglify from 'rollup-plugin-uglify'
+import { uglify } from 'rollup-plugin-uglify'
 import visualizer from 'rollup-plugin-visualizer'
 
 const globals = {
