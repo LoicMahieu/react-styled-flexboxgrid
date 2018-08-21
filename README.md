@@ -7,7 +7,7 @@
 [![js-standard-style](https://img.shields.io/badge/lint-standard-green.svg)](http://standardjs.com)
 
 
-Set of React components that implement [`flexboxgrid.css`](https://github.com/kristoferjoseph/flexboxgrid) but with [`styled-components`](https://github.com/styled-components/styled-components). Furthermore, it allows to customize grid configuration like gutter width...
+Set of React components that implement [`flexboxgrid.css`](https://github.com/kristoferjoseph/flexboxgrid) but with [`styled-components`](https://github.com/styled-components/styled-components)/[`emotion`](https://github.com/emotion-js/emotion). Furthermore, it allows to customize grid configuration like gutter width...
 
 Highly inspired by the excellent [`react-flexbox-grid`](https://github.com/roylee0704/react-flexbox-grid) which the API is nearly the same than this module.
 
@@ -129,6 +129,13 @@ const App = props =>
       </Row>
     </Grid>
   </ThemeProvider>
+```
+
+## Use with Emotion
+To use react-styled-flexboxgrid with emotion, import from 'react-styled-flexboxgrid/emotion':
+
+```jsx
+import { Grid, Col, Row } from 'react-styled-flexboxgrid/emotion'
 ```
 
 ## Related projects

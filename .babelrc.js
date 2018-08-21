@@ -12,5 +12,22 @@ module.exports = {
     ['transform-react-remove-prop-types', { mode: 'unsafe-wrap' }],
     'transform-object-rest-spread',
     ['transform-class-properties', { loose }]
-  ]
+  ],
+  env: {
+    emotion: {
+      plugins: [
+        ['transform-react-remove-prop-types', { mode: 'unsafe-wrap' }],
+        'transform-object-rest-spread',
+        ['transform-class-properties', { loose }],
+        [
+          'transform-rename-import',
+          {
+            original: '^styled-components$',
+            replacement: 'react-emotion'
+          }
+        ],
+        'emotion'
+      ]
+    }
+  }
 }
