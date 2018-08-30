@@ -80,7 +80,7 @@
     "react-dom": "^16.0.0",
     "rollup": "^0.61.0",
     "rollup-plugin-babel": "^3.0.3",
-    "rollup-plugin-uglify": "^4.0.0",
+    "rollup-plugin-uglify": "^5.0.0",
     "rollup-plugin-visualizer": "^0.8.0",
     "styled-components": "^3.3.2",
     "webpack": "^4.12.0",
