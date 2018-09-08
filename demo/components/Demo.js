@@ -27,6 +27,7 @@ import alignBottomMD from 'html-loader!markdown-loader!../md/align-bottom.md'
 import distAroundMD from 'html-loader!markdown-loader!../md/dist-around.md'
 import distBetweenMD from 'html-loader!markdown-loader!../md/dist-between.md'
 import hideMD from 'html-loader!markdown-loader!../md/hide.md'
+import reverseMD from 'html-loader!markdown-loader!../md/reverse.md'
 
 import Markdown from './Markdown'
 
@@ -50,6 +51,15 @@ const Demo = props => (
       </Row>
       <Row>
         <Markdown html={responsiveMD} />
+      </Row>
+    </Section>
+    <Section title='Reverse' description='Responsive reverse column order.'>
+      <Row reverse="md">
+        <Box type='row' xs={2} />
+        <Box type='row' xs={10} />
+      </Row>
+      <Row>
+        <Markdown html={reverseMD} />
       </Row>
     </Section>
     <Section title='Offsets' description='Offset a column.'>

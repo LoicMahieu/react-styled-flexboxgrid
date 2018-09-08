@@ -15,7 +15,7 @@ const Row = styled.div`
   margin-right: ${p => config(p).gutterWidth / 2 * -1}rem;
   margin-left: ${p => config(p).gutterWidth / 2 * -1}rem;
 
-  ${p => p.reverse && `
+  ${p => p.reverse && config(p).media[p.reverse]`
     flex-direction: row-reverse;
   `}
 
@@ -63,7 +63,7 @@ const Row = styled.div`
 Row.displayName = 'Row'
 
 Row.propTypes = {
-  reverse: PropTypes.bool,
+  reverse: ModificatorType,
   start: ModificatorType,
   center: ModificatorType,
   end: ModificatorType,
