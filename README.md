@@ -56,7 +56,7 @@ The `<Grid>` component is optional and can help to wrap children in a fixed/flui
 
 ##### Props
 
-- `reverse` _(Boolean)_: Use `flex-direction: row-reverse`. Default: false
+- `reverse`
 - `start`
 - `center`
 - `end`
