@@ -13,7 +13,7 @@ const name = 'react-styled-flexboxgrid'
 
 const plugins = [
   babel({
-    plugins: ['external-helpers']
+    plugins: ['@babel/plugin-external-helpers']
   })
 ]
 

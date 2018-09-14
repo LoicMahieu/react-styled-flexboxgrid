@@ -1,8 +1,9 @@
 
-require('babel-register')
+require('@babel/register')
 
 const webpackConfig = Object.assign({}, require('./demo/webpack.config.babel'), {
   entry: null,
+  output: null,
   devtool: 'inline-source-map'
 })
 
@@ -13,7 +14,7 @@ module.exports = function (config) {
     basePath: './',
 
     files: [
-      { pattern: 'node_modules/babel-polyfill/browser.js', instrument: false },
+      { pattern: 'node_modules/@babel/polyfill/browser.js', instrument: false },
       './src/**/*.test.js'
     ],
 

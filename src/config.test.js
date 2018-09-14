@@ -1,8 +1,8 @@
 /* eslint-env mocha */
 
-import {expect} from 'chai'
+import { expect } from 'chai'
 
-import config, {BASE_CONF, DIMENSION_NAMES} from './config'
+import config, { BASE_CONF, DIMENSION_NAMES } from './config'
 
 describe('config', () => {
   describe('BASE_CONF', () => {
