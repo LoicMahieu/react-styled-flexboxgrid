@@ -1,9 +1,9 @@
 /* eslint-env mocha */
 /* eslint-disable no-unused-expressions */
 
-import {expect} from 'chai'
+import { expect } from 'chai'
 
-import {BASE_CONF, Grid, Row, Col} from '.'
+import { BASE_CONF, Grid, Row, Col } from '.'
 
 describe('index', () => {
   it('should correctly export', () => {
