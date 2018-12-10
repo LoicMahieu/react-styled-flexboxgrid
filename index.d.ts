@@ -1,6 +1,6 @@
 declare module "react-styled-flexboxgrid" {
 
-  import { ThemedStyledFunctionBase,StyledComponent } from "styled-components";
+  import { StyledComponent } from "styled-components";
 
   namespace ReactStyledFlexboxgrid {
 
