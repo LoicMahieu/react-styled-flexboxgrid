@@ -1,7 +1,7 @@
 
-import { injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
-injectGlobal`
+export default createGlobalStyle`
   body {
     box-sizing: border-box;
     padding: 0;
