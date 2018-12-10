@@ -1,6 +1,6 @@
 declare module "react-styled-flexboxgrid" {
 
-  import { StyledComponentClass } from "styled-components";
+  import { ThemedStyledFunctionBase } from "styled-components";
 
   namespace ReactStyledFlexboxgrid {
 
@@ -86,7 +86,7 @@ declare module "react-styled-flexboxgrid" {
   }
 
   export type ITheme = ReactStyledFlexboxgrid.ITheme;
-  export const Grid: StyledComponentClass<ReactStyledFlexboxgrid.IGridProps, "div">;
-  export const Row: StyledComponentClass<ReactStyledFlexboxgrid.IRowProps, "div">;
-  export const Col: StyledComponentClass<ReactStyledFlexboxgrid.IColProps, "div">;
+  export const Grid: ThemedStyledFunctionBase<"div", any, ReactStyledFlexboxgrid.IGridProps, never>;
+  export const Row: ThemedStyledFunctionBase<"div", any, ReactStyledFlexboxgrid.IRowProps, never>;
+  export const Col: ThemedStyledFunctionBase<"div", any, ReactStyledFlexboxgrid.IColProps, never>;
 }

@@ -1,7 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-import './global-styles'
 import Homepage from './components/Homepage'
+import GlobalStyle from './components/GlobalStyle'
 
-ReactDOM.render(<Homepage />, document.getElementById('root'))
+ReactDOM.render((
+  <>
+    <GlobalStyle />
+    <Homepage />
+  </>), document.getElementById('root'))
