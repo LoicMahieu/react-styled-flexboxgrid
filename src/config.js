@@ -10,7 +10,7 @@ export const BASE_CONF = {
   container: {
     sm: 46,
     md: 61,
-    lg: 76
+    lg: 72
   },
   breakpoints: {
     xs: 0,
