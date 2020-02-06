@@ -91,6 +91,9 @@ declare module "react-styled-flexboxgrid" {
   export const config: (props: any) => {
     media: {
       xs: ThemedCssFunction<DefaultTheme>;
+      sm: ThemedCssFunction<DefaultTheme>;
+      md: ThemedCssFunction<DefaultTheme>;
+      lg: ThemedCssFunction<DefaultTheme>;
     };
   };
 }
