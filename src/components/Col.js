@@ -5,7 +5,7 @@ import isInteger from 'lodash.isinteger'
 
 import config, { DIMENSION_NAMES } from '../config'
 
-const ModificatorType = PropTypes.oneOfType([ PropTypes.number, PropTypes.bool ])
+const ModificatorType = PropTypes.oneOfType([PropTypes.number, PropTypes.bool])
 
 const offsetProps = DIMENSION_NAMES.map(d => d + 'Offset')
 const DimensionPropTypes = DIMENSION_NAMES.reduce((propTypes, dimension) => {
