@@ -1,9 +1,7 @@
 declare module "react-styled-flexboxgrid" {
-
-  import { StyledComponent } from "styled-components";
+  import { StyledComponent, DefaultTheme, ThemedCssFunction } from "styled-components";
 
   namespace ReactStyledFlexboxgrid {
-
     interface ITheme {
       /**
        * rem
@@ -89,4 +87,10 @@ declare module "react-styled-flexboxgrid" {
   export const Grid: StyledComponent<"div", any, ReactStyledFlexboxgrid.IGridProps, never>;
   export const Row: StyledComponent<"div", any, ReactStyledFlexboxgrid.IRowProps, never>;
   export const Col: StyledComponent<"div", any, ReactStyledFlexboxgrid.IColProps, never>;
+
+  export const config: (props: any) => {
+    media: {
+      xs: ThemedCssFunction<DefaultTheme>;
+    };
+  };
 }
