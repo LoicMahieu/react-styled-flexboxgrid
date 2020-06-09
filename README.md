@@ -24,6 +24,8 @@ npm i -S react-styled-flexboxgrid
 - `react@^0.14.0 || ^15.0.0-0 || ^16.0.0-0`
 - `prop-types@^15.0.0-0`
 - `styled-components@2`
+- `@emotion/core@10.x`
+- `@emotion/styled@10.x`
 
 You should install them in your project.
 
