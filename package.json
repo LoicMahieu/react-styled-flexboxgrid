@@ -1,6 +1,6 @@
 {
   "name": "@samuelcastro/react-styled-flexboxgrid",
-  "version": "3.2.2",
+  "version": "3.2.3",
   "description": "Grid system based on styled-components and flexbox for React",
   "keywords": [
     "react",
@@ -96,11 +96,11 @@
     "webpack-hot-middleware": "^2.25.0"
   },
   "peerDependencies": {
-    "react": ">= 0.14.0 < 17.0.0-0",
-    "prop-types": "^15.6.0",
-    "styled-components": ">= 2",
     "@emotion/core": ">=10",
-    "@emotion/styled": ">=10"
+    "@emotion/styled": ">=10",
+    "prop-types": "^15.6.0",
+    "react": ">= 0.14.0 < 17.0.0-0",
+    "styled-components": ">= 2"
   },
   "dependencies": {
     "lodash.isinteger": "^4.0.4"
