@@ -17,7 +17,7 @@ Highly inspired by the excellent [`react-flexbox-grid`](https://github.com/royle
 ### Installation
 
 ```
-npm i -S react-styled-flexboxgrid
+npm i -S @samuelcastro/react-styled-flexboxgrid
 ```
 
 `react-styled-flexboxgrid` depends on 2 **peer** dependencies:
