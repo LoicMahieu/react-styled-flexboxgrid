@@ -1,4 +1,3 @@
-import { ThemedStyledProps } from 'styled-components';
 declare module '@samuelcastro/react-styled-flexboxgrid' {
   interface ThemeProps<T> {
     theme: T;
