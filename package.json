@@ -96,9 +96,9 @@
     "webpack-hot-middleware": "^2.25.0"
   },
   "peerDependencies": {
-    "react": ">= 0.14.0 < 17.0.0-0",
-    "prop-types": "^15.6.0",
-    "styled-components": ">= 2"
+    "react": ">=0.14.0 < 17.0.0-0",
+    "prop-types": ">=15.6.0",
+    "styled-components": ">=2"
   },
   "dependencies": {
     "lodash.isinteger": "^4.0.4"
