@@ -102,5 +102,8 @@
   },
   "dependencies": {
     "lodash.isinteger": "^4.0.4"
+  },
+  "engines": {
+    "node": ">=10"
   }
 }
