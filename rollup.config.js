@@ -6,10 +6,11 @@ import visualizer from 'rollup-plugin-visualizer'
 const globals = {
   react: 'React',
   'styled-components': 'styled',
+  '@emotion/core': 'styled',
   'prop-types': 'PropTypes',
   'lodash.isinteger': '_.isInteger'
 }
-const name = 'react-styled-flexboxgrid'
+const name = '@samuelcastro/react-styled-flexboxgrid'
 
 const plugins = [
   babel({
@@ -19,7 +20,7 @@ const plugins = [
 
 const base = {
   input: 'src/index.js',
-  external: ['react', 'styled-components', 'prop-types', 'lodash.isinteger'],
+  external: ['react', 'styled-components', '@emotion/core', '@emotion/styled', 'prop-types', 'lodash.isinteger'],
   plugins
 }
 

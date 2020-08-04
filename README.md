@@ -17,13 +17,15 @@ Highly inspired by the excellent [`react-flexbox-grid`](https://github.com/royle
 ### Installation
 
 ```
-npm i -S react-styled-flexboxgrid
+npm i -S @samuelcastro/react-styled-flexboxgrid
 ```
 
 `react-styled-flexboxgrid` depends on 2 **peer** dependencies:
 - `react@^0.14.0 || ^15.0.0-0 || ^16.0.0-0`
 - `prop-types@^15.0.0-0`
 - `styled-components@2`
+- `@emotion/core@10.x`
+- `@emotion/styled@10.x`
 
 You should install them in your project.
 

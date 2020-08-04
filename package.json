@@ -1,6 +1,6 @@
 {
-  "name": "react-styled-flexboxgrid",
-  "version": "3.2.1",
+  "name": "@samuelcastro/react-styled-flexboxgrid",
+  "version": "3.2.4",
   "description": "Grid system based on styled-components and flexbox for React",
   "keywords": [
     "react",
@@ -52,6 +52,8 @@
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
     "@babel/register": "^7.8.3",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
     "babel-loader": "^8.0.6",
     "babel-plugin-emotion": "^10.0.27",
     "babel-plugin-styled-components": "^1.10.7",
@@ -59,7 +61,6 @@
     "babel-preset-react-hmre": "^1.1.1",
     "chai": "^4.2.0",
     "cross-env": "^7.0.0",
-    "emotion": "^10.0.27",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-config-standard-react": "^9.2.0",
@@ -82,7 +83,6 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-dom": "^16.12.0",
-    "react-emotion": "^10.0.0",
     "rollup": "^1.31.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-uglify": "^6.0.4",
@@ -96,8 +96,10 @@
     "webpack-hot-middleware": "^2.25.0"
   },
   "peerDependencies": {
-    "react": ">= 0.14.0 < 17.0.0-0",
+    "@emotion/core": ">=10",
+    "@emotion/styled": ">=10",
     "prop-types": "^15.6.0",
+    "react": ">= 0.14.0 < 17.0.0-0",
     "styled-components": ">= 2"
   },
   "dependencies": {
