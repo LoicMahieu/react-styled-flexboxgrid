@@ -1,5 +1,5 @@
 {
-  "name": "react-styled-flexboxgrid",
+  "name": "react-styled-flexboxgrid-v3",
   "version": "0.0.1",
   "description": "Grid system based on styled-components and flexbox for React",
   "keywords": [
@@ -96,7 +96,7 @@
     "webpack-hot-middleware": "^2.25.0"
   },
   "peerDependencies": {
-    "react": ">= 0.14.0 < 18.2.0-0",
+    "react": ">= 0.14.0",
     "prop-types": "^15.6.0",
     "styled-components": ">= 2"
   },
