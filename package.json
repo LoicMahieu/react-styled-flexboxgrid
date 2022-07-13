@@ -1,6 +1,6 @@
 {
-  "name": "react-styled-flexboxgrid",
-  "version": "3.2.1",
+  "name": "react-styled-flexboxgrid-v3",
+  "version": "0.0.1",
   "description": "Grid system based on styled-components and flexbox for React",
   "keywords": [
     "react",
@@ -32,16 +32,16 @@
     "mocha:watch": "cross-env NODE_ENV=test mocha --watch --require @babel/register **/*.test.js",
     "prepublish": "npm run build"
   },
-  "author": "Loic Mahieu",
+  "author": "Sajjad Akhter",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LoicMahieu/react-styled-flexboxgrid.git"
+    "url": "git+https://github.com/sajjadakhter/react-styled-flexboxgrid.git"
   },
   "bugs": {
-    "url": "https://github.com/LoicMahieu/react-styled-flexboxgrid/issues"
+    "url": "https://github.com/sajjadakhter/react-styled-flexboxgridissues"
   },
-  "homepage": "https://github.com/LoicMahieu/react-styled-flexboxgrid",
+  "homepage": "https://github.com/sajjadakhter/react-styled-flexboxgrid",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
@@ -96,11 +96,14 @@
     "webpack-hot-middleware": "^2.25.0"
   },
   "peerDependencies": {
-    "react": ">= 0.14.0 < 17.0.0-0",
+    "react": ">= 0.14.0",
     "prop-types": "^15.6.0",
     "styled-components": ">= 2"
   },
   "dependencies": {
     "lodash.isinteger": "^4.0.4"
+  },
+  "engines": {
+    "node": ">=10"
   }
 }
